@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 'gilroy';
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main
+{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+#back
+{
+    width: 100%;
+    height: 100vh;
+    
+}
+#back img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#top
+{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.5) */
+}
+
+#workingArea
+{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    /* background-color: rgba(165, 42, 42, 0.849); */
+    /* border: 1px solid rgb(255, 6, 6); */
+}
+
+#nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+#nav img
+{
+    height: 60px;
+}
+
+#nleft, #nright
+{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav a
+{
+    pointer-events: all;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+#hero
+{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: brown; */
+}
+
+#heroleft
+{
+    min-width: 50%;
+    /* background-color: blue; */
+
+}
+
+#heroleft .elem
+{
+    position: relative;
+    height: 9vw;
+    overflow: hidden;
+   
+}
+
+#heroleft .elem h1{
+     position: absolute;
+     top: 100%;
+     left: 0;
+    line-height: .9;
+    font-family: 'kajiro' ;
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+}
+#heroleft .elem h1:nth-child(1){
+    top : 0;
+
+}
+
+#heroleft button
+{
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top:2vw;
+    font-family: 'kajiro';
+    pointer-events: all;
+    cursor: pointer;
+
+}
+#heroright
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    /* background-color: rgb(243, 243, 199); */
+    color: white;
+}
+
+#heroright p 
+{
+    text-align: right;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#heroright #imagediv{
+
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/flagged/photo-1557609404-dc687568a1d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzV8fHBvcnRhaXR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#heroright p:nth-child(3)
+{
+    /* background-color: red; */
+    margin-bottom: 100px;
+}
+
